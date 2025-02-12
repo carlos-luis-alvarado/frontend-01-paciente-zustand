@@ -7,7 +7,11 @@ import { useThemeStore } from "./store/themeStore";
 import { useCallback } from "react";
 function App() {
   const { toggleTheme, theme } = useThemeStore()
-  const setThemeInScreen = useCallback(() => document.documentElement.classList = theme, [theme])
+  const setThemeInScreen = useCallback(() => {
+    if (theme) {
+      document.documentElement.classList.add(theme);
+    }
+  }, [theme])
   setThemeInScreen()
   const themeChange = () => {
     toggleTheme()
