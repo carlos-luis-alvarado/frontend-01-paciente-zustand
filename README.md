@@ -45,7 +45,8 @@ Inicair servidor
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/carlos-luis-alvarado/frontend-01-paciente-zustand/blob/2feb40c0a758248cd9369d3cf680e3bd7527ef58/Captura.JPG)
+![App Screenshot](https://github.com/carlos-luis-alvarado/frontend-01-paciente-zustand/blob/2feb40c0a758248cd9369d3cf680e3bd7527ef58/Captura2.JPG)
 
 
 ## Relacionado
