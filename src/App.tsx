@@ -8,8 +8,10 @@ import { useCallback } from "react";
 function App() {
   const { toggleTheme, theme } = useThemeStore()
   const setThemeInScreen = useCallback(() => {
-    if (theme) {
-      document.documentElement.classList.add(theme);
+    if (theme == "") {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
     }
   }, [theme])
   setThemeInScreen()
@@ -21,8 +23,8 @@ function App() {
       <div className="container mx-auto flex justify-end px-2 py-2 ">
         <button onClick={themeChange} className="px-5 py-2 mr-10  bg-black dark:bg-white rounded-full hover:cursor-pointer shadow shadow-gray-700 dark:shadow-white transition-all duration-1000">
           {(theme !== 'dark') ?
-            <TiAdjustContrast className="text-white text-xl" />
-            : <TiAdjustBrightness className="text-black text-xl" />
+            <TiAdjustContrast className="text-black text-xl" />
+            : <TiAdjustBrightness className="text-white text-xl" />
           }
         </button>
       </div>
